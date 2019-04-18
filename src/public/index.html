@@ -26,7 +26,7 @@
 						<div class="card-header">
 							<h3>Nombre de usuario</h3>
 						</div>
-						<p id="nickError"></p>
+						<span id="nickError"></span>
 						<div class="card-body">
 							<form id="nickForm">
 								<input type="text" id="nickname" class="form-control">
@@ -38,36 +38,38 @@
 			</article>
 			<!-- Espacio de chat -->
 			<article class="container" id="contentWrap">
-				<!-- mensajes -->
-				<section class="col-md-6 offset-md-1 mt-4">
-					<div class="card">
-						<div class="card-header">
-							<h2>Mensajes</h2>
-						</div>
-						<div id="chat" class="card-body merienda"></div>
-						<form id="message-form" class="card-footer">
-							<div class="input-group">
-								<input type="text" id="message" class="form-control merienda">
-								<div class="input-group-append">
-									<button type="submit" class="btn btn-warning" name="button">
-										<i class="fas fa-paper-plane"></i> Enviar
-									</button>
-								</div>
+				<div class="row">
+					<!-- mensajes -->
+					<section class="col-md-6 offset-md-1 mt-4">
+						<div class="card">
+							<div class="card-header">
+								<h2>Mensajes</h2>
 							</div>
-						</form>
-					</div>
-				</section>
-				<!-- usuarios registrados -->
-				<section class="col-md-3" id="userWrap">
-					<div class="card">
-						<div class="card-header">
-							<h3>Usuarios</h3>
+							<div id="chat" class="card-body merienda"></div>
+							<form id="message-form" class="card-footer">
+								<div class="input-group">
+									<input type="text" id="message" class="form-control merienda">
+									<div class="input-group-append">
+										<button type="submit" class="btn btn-warning" name="button">
+											<i class="fas fa-paper-plane"></i> Enviar
+										</button>
+									</div>
+								</div>
+							</form>
 						</div>
-						<div class="card-body">
-							<div id="usernames"></div>
+					</section>
+					<!-- usuarios registrados -->
+					<section class="col-md-3 mt-4" id="userWrap">
+						<div class="card">
+							<div class="card-header">
+								<h3>Usuarios</h3>
+							</div>
+							<div class="card-body">
+								<div id="usernames"></div>
+							</div>
 						</div>
-					</div>
-				</section>
+					</section>
+				</div>
 			</article>
 		</main>
 	</body>
