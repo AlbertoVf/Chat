@@ -23,3 +23,7 @@ h2 {
 #titulo {
     font-size: 3em;
 }
+
+#contentWrap {
+    display: none;
+}
