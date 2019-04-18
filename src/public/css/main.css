@@ -12,8 +12,23 @@ h2 {
     text-align: center;
 }
 
+i {
+    margin: 4px;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+b {
+    color: #667db6;
+}
+
 *, .roboto {
+    font-size: 16pt;
     font-family: 'Roboto', sans-serif;
+}
+
+.user {
+    border-bottom: 0.5px solid black;
 }
 
 .merienda {
