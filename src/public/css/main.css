@@ -1,6 +1,27 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Merienda';
+
+
+
 body {
     background: #667db6;
     background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
     background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
     color: #0F2027;
+}
+
+h2 {
+    text-align: center;
+}
+
+*, .roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.merienda {
+    font-family: 'Merienda', cursive;
+}
+
+#titulo {
+    font-size: 3em;
 }
