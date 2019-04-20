@@ -6,9 +6,15 @@ const APP = EXPRESS();/* Iniciar el servidor express */
 const SERVER = HTTP.createServer(APP);/* Crear servidor http */
 const IO = SOCKETIO.listen(SERVER);/* Mantener la escucha */
 const PORT = 3000;/* Puerto en el que se utilizara el servidor */
+const MONGOOSE = require('mongoose');
 require("./socket")(IO);
 APP.set("port", process.env.PORT || PORT)/* Establece el puerto */
 APP.use(EXPRESS.static(PATH.join(__dirname, "public")));/* Establecer la pagina de inicio */
+/* Conexion con el servidor */
+MONGOOSE
+    .connect('mongodb://localhost/chat')
+    .then(db => console.log('db connected'))
+    .catch(err => console.log(err));
 SERVER.listen(APP.get("port"), () => {
     /* El servidor esta a la escucha */
     console.log("Servidor en el puerto " + PORT);
